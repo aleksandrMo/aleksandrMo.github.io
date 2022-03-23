@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Payment</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="../css/styles.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    </head>
+    <body>
+        <div class="header">
+            <header class="m-auto">
+                <div class="header-logo"></div>
+                <div class="letter">Edit your details in your cover letter</div>
+            </header>
+        </div>
+
+        <div class="main m-auto" id="bmain">    
+            <section>
+                <div class="text m-auto">Your profile is ready. Get your personalized cover letter now for less than the price of a cup of coffee and improve your career.</div>
+                <div class="row m-auto">
+                    <div class="block4">
+                        <div id="type1" class="">
+                            <div class="top">
+                                <div class="limited">LIMITED SUMMER OFFER</div>
+                                <div class="limited-time"><p id="time"></p></div>
+                            </div>
+                            <div class="type1">
+                                <div class="type-img"></div>
+                                <div class="type-text">
+                                    <p class="type-name">Trial</p>
+                                    <p class="type-time">The first week only for <span class="type-price">$0.99</span></p>
+                                    <p class="type-rebills">Rebills at $8.99 per month after your trial is completed.</p>
+                                </div>
+                                <button class="type-button" onclick="gomain()">Change</button>
+                            </div>
+                        </div>
+                        
+                        <div id="type2" class="hidden">
+                            <div class="type2">
+                                <div class="type-img-2"></div>
+                                <div class="type-text">
+                                    <p class="type-name">Annual Plan</p>
+                                    <span class="type-price-2">$0.99</span> <span class="type-per-year"> / year</span>
+                                    <p class="type-rebills">Your Premium plan will auto-renew. Cancel any time.</p>
+                                </div>
+                                <button class="type-button" onclick="gomain()">Change</button>
+                            </div>
+                        </div>
+
+                        <div class="bank-type"></div>
+                        <div class="input">
+                            <div class="card-in d-flex">
+                                <div class="card-number">
+                                    <p class="input-text">Card number</p>
+                                    <input class="input-num-zero" id="numin" placeholder="Enter card number" maxlength="19" onkeypress="return checkDigit(event)">
+                                    <div id="numcheck"></div>
+                                    <div id="numwrong" class="hidden wrong-text">Minimum length 12</div>
+                                </div>
+                                <div class="d-inline-block">
+                                    <div class="d-inline-block">
+                                        <div class="d-inline-block">
+                                            <p class="input-text">Exp. month</p>
+                                            <select id="monthselect">
+                                                <option value="0">Month</option>
+                                            </select>
+                                            <div class="point"></div>
+                                        </div>
+
+                                        <span class="slash">/</span>
+                                        
+                                        <div class="d-inline-block">
+                                            <p class="input-text">Exp. year</p>
+                                            <select id="yearselect">
+                                                <option value="0">Year</option>
+                                            </select>
+                                            <div class="point"></div>
+                                        </div>
+                                        <div id="datecheck"></div>
+                                    </div>
+                                        
+                                    <div id="datewrong" class="hidden wrong-text">You entered incorrect data</div>
+                                </div>
+                            </div>
+                            <div class="name-in d-flex">
+                                <div class="name-first">
+                                    <p class="input-text">Cardholder First Name</p>
+                                    <input class="input-first" id="firstin" placeholder="Enter First Name">
+                                    <div id="firstcheck"></div>
+                                    <div id="firstwrong" class="hidden wrong-text">Names must not contain numbers</div>
+                                </div>
+                                <div class="name-last">
+                                    <p class="input-text">Cardholder Last Name</p>
+                                    <input class="input-last" id="lastin" placeholder="Enter Last Name">
+                                    <div id="lastcheck"></div>
+                                    <div id="lastwrong" class="hidden wrong-text">Names must not contain numbers</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="confirm">
+                            <a href="#"><button class="confirm-button" id="bconfirm" disabled>Confirm</button></a>
+                            <div class="safe"></div><span class="text-secure">Secure credit card payment</span>
+                        </div>
+                        <div class="info">
+                            <p>Your card will be automatically attached to your profile, you can remove it at any time. By clicking “Confirm” you agree to the <a href="#" class="a-terms">Terms & Conditions</a></p>
+                        </div>
+                    </div>
+                    <div class="block3">
+                        <div class="b3-name">
+                            <p>
+                                <span class="star mr-1"></span>
+                                BEST PRICE GUARANTEED
+                                <span class="star ml-1"></span></span>
+                            </p>
+                        </div>
+                        <ul>Your plan will include:
+                            <li>Unlimited Cover Letters</li>
+                            <li>50+ custom templates</li>
+                            <li>Creative designs</li>
+                            <li>Custom backgrounds</li>
+                            <li>More than 15 color schemes</li>
+                            <li>Create multiple versions</li>
+                            <li>Custom sections</li>
+                            <li>Unlimited PDF downloads</li>
+                            <li>Email sharing</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <div class="comment row m-auto">
+                <div class="com1 m-auto">
+                    <div id="com11">
+                        <div class="com1-img"></div>
+                        <div class="com-text">
+                            <h2>Deborah H.</h2>
+                            <p>“It is important to show your skills in a cover letter; I think you have already heard it before”. Only in this case, you will have an opportunity to prove your abilities in the interview. I decided to take the help of qualified professionals. My skills were demonstrated in the right way.”</p>               
+                        </div>
+                    </div>
+                </div>
+                <div class="othercom m-0">
+                    <div class="hidden" id="com12">
+                        <div class="com2-img"></div>
+                        <div class="com-text">
+                            <h2>Cooper D.</h2>
+                            <p>“I always love a wide selection of something, and the CL has satisfied my needs in this case. Many variations of strengths and designs impressed me and made me push the matter through. And I did not regret my choice when the company sent me an offer for cooperation.”</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="othercom m-0">
+                    <div class="hidden" id="com13">
+                        <div class="com1-img"></div>
+                        <div class="com-text">
+                            <h2>Deborah H.</h2>
+                            <p>“With every drop of water you drink, every breath you take, you're connected to the sea. No matter where on Earth you live. Most of the oxygen in the atmosphere is generated by the sea. Wherever you go, no matter what the weather, always bring your own sunshine. Or some other text.”</p>               
+                        </div>
+                    </div>
+                </div>
+                <div class="com2 m-auto">
+                    <div id="com21">
+                        <div class="com2-img"></div>
+                        <div class="com-text">
+                            <h2>Cooper D.</h2>
+                            <p>“I always love a wide selection of something, and the CL has satisfied my needs in this case. Many variations of strengths and designs impressed me and made me push the matter through. And I did not regret my choice when the company sent me an offer for cooperation.”</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="othercom m-0">
+                    <div class="hidden" id="com22">
+                        <div class="com1-img"></div>
+                        <div class="com-text">
+                            <h2>Deborah H.</h2>
+                            <p>“With every drop of water you drink, every breath you take, you're connected to the sea. No matter where on Earth you live. Most of the oxygen in the atmosphere is generated by the sea. Wherever you go, no matter what the weather, always bring your own sunshine. Or some other text.”</p>               
+                        </div>
+                    </div>
+                </div>
+                <div class="othercom m-0">
+                    <div class="hidden" id="com23">
+                        <div class="com1-img"></div>
+                        <div class="com-text">
+                            <h2>Deborah H.</h2>
+                            <p>“It is important to show your skills in a cover letter; I think you have already heard it before”. Only in this case, you will have an opportunity to prove your abilities in the interview. I decided to take the help of qualified professionals. My skills were demonstrated in the right way.”</p>               
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav m-auto">
+                <div class="bar m-auto">
+                    <div class="try d-inline-block">
+                        <div class="dot1" id="d1"></div>
+                    </div>
+                    <div class="try d-inline-block">
+                        <div class="dot2" id="d2"></div>
+                    </div>
+                    <div class="try d-inline-block">
+                        <div class="dot3" id="d3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <footer class="m-auto">
+                <div class="footer-logo">2</div>
+                <div class="else">Private Policy <span class="mr-5 ml-5">|</span> Term of Use</div>
+                <div class="cc">© 2019, My Letter. All rights reserved.</div>
+            </footer>
+        </div>
+        <script src="../js/js-timer.js"></script>
+        <script src="../js/js-payment.js"></script>
+        <script src="../js/js-appear.js"></script>
+        <script src="../js/js-timecom.js"></script>
+    </body>
+</html>

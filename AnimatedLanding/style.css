@@ -1,0 +1,204 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.navbar {
+    
+}
+
+.title {
+    width: 100% - 300px;
+    height: 820px;
+    padding-left: 300px;
+    padding-top: 200px;
+}
+
+h1 {
+    font-family: 'Alata', sans-serif;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 70px;
+}
+
+.fs_title {
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+
+.fs_title.active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.fs_subtitle {
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0.4s;
+}
+
+.fs_subtitle.active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+h2 {
+    font-family: 'Mulish', sans-serif;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 40px;
+}
+
+.text {
+    width: 100% - 600px;
+    height: 820px;
+    background-color: #f7944377;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 100px;
+}
+.text-item {
+    overflow: hidden;
+}
+
+p {
+    padding: 10px;
+    color: #fff;
+    font-size: 25px;
+}
+
+.anim-show {
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+
+.anim-show.active,
+.active.anim-show {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.photo {
+    width: 100%;
+    height: 400px;
+    background-color: #2a234277;
+}
+
+.hp {
+    padding-left: 300px;
+}
+
+.panel {
+    display: flex;
+    justify-content: center;
+}
+
+.photo-panel {
+    width: 1700px;
+    height: 240px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    text-align: center;
+}
+
+.bonsai1 {
+    width: 270px;
+    height: 265px;
+    border-radius: 50%;
+    background-image: url(images/bonsai1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.bonsai2 {
+    width: 260px;
+    height: 265px;
+    border-radius: 50%;
+    background-image: url(images/bonsai2.jpg);
+    background-size: contain;
+}
+
+.bonsai3 {
+    width: 400px;
+    height: 265px;
+    border-radius: 50%;
+    background-image: url(images/bonsai3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.bonsai4 {
+    width: 160px;
+    height: 265px;
+    border-radius: 50%;
+    background-image: url(images/bonsai4.jpg);
+    background-size: contain;
+}
+
+.bonsai5 {
+    width: 500px;
+    height: 265px;
+    border-radius: 50%;
+    background-image: url(images/bonsai5.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.image {
+    transform: scale(0);
+    transition: all 0.8s ease 0s;
+}
+
+.itext {
+    transform: translate(0px, 50%);
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+}
+
+.pan-item.active .image {
+    transform: scale(1);
+}
+
+.pan-item.active .itext {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 0.8s ease 0.6s;
+}
+
+.list {
+    width: 100% - 800px;
+    height: 500px;
+    background-color: #f7944377;
+    padding-left: 400px;
+    padding-right: 400px;
+    padding-top: 100px;
+}
+
+li {
+    width: 700px;
+    padding: 20px;
+    color: #fff;
+    font-size: 25px;
+}
+
+.list-item {
+    transform: translate(70%, 0px);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+
+.list-item.active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}

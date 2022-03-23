@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Payment test</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="css/styles.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    </head>
+    <body>
+        <div class="header">
+            <header class="m-auto" >
+                <div class="header-logo"></div>
+                <div class="letter">Edit your details in your cover letter</div>
+            </header>
+        </div>
+
+        <div class="main m-auto" id="bmain">
+            <section>
+                <div class="text m-auto">Your profile is ready. Get your personalized cover letter now for less than the price of a cup of coffee and improve your career.</div>
+                <div class="row m-auto">
+                    <div class="block1">
+                        <div class="timer">
+                            <div class="timer-text m-auto">LIMITED SUMMER OFFER</div>
+                            <div class="timer-time m-auto "><p id="time"></p></div>
+                        </div>
+                        <div class="b1-img m-auto"></div>
+                        <div class="b-description">
+                            <p class="name">Trial</p>
+                            <p class="time">The first week only for</p>
+                            <p class="price">$0.99</p>
+                            <p class="rebills m-auto">Rebills at $8.99 per month after your trial is completed.</p>
+                        </div>
+                        <button class="b-button" onclick="gofirst()" id="button1">Get started</button>
+                    </div>
+                    <div class="block2">
+                        <div class="b2-img m-auto"></div>
+                        <div class="b-description">
+                            <p class="name">Annual Plan</p>
+                            <p class="time">The first week only for</p>
+                            <p class="price margin-b">$39.00<span class="per-year">/ year</span></p>
+                            <p class="rebills m-auto">Your Premium plan will auto-renew. Cancel any time.</p>
+                        </div>
+                        <button class="b-button" onclick="gosecond()" id="button2">Get started</button>
+                    </div>
+                    <div class="block3">
+                        <div class="b3-name">
+                            <p>
+                                <span class="star mr-1"></span>
+                                BEST PRICE GUARANTEED
+                                <span class="star ml-1"></span></span>
+                            </p>
+                        </div>
+                        <ul>Your plan will include:
+                            <li>Unlimited Cover Letters</li>
+                            <li>50+ custom templates</li>
+                            <li>Creative designs</li>
+                            <li>Custom backgrounds</li>
+                            <li>More than 15 color schemes</li>
+                            <li>Create multiple versions</li>
+                            <li>Custom sections</li>
+                            <li>Unlimited PDF downloads</li>
+                            <li>Email sharing</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <div class="comment row m-auto">
+                <div class="com1 m-auto">
+                    <div id="com11">
+                        <div class="com1-img"></div>
+                        <div class="com-text">
+                            <h2>Deborah H.</h2>
+                            <p>“It is important to show your skills in a cover letter; I think you have already heard it before”. Only in this case, you will have an opportunity to prove your abilities in the interview. I decided to take the help of qualified professionals. My skills were demonstrated in the right way.”</p>               
+                        </div>
+                    </div>
+                </div>
+                <div class="othercom m-0">
+                    <div class="hidden" id="com12">
+                        <div class="com2-img"></div>
+                        <div class="com-text">
+                            <h2>Cooper D.</h2>
+                            <p>“I always love a wide selection of something, and the CL has satisfied my needs in this case. Many variations of strengths and designs impressed me and made me push the matter through. And I did not regret my choice when the company sent me an offer for cooperation.”</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="othercom m-0">
+                    <div class="hidden" id="com13">
+                        <div class="com1-img"></div>
+                        <div class="com-text">
+                            <h2>Deborah H.</h2>
+                            <p>“With every drop of water you drink, every breath you take, you're connected to the sea. No matter where on Earth you live. Most of the oxygen in the atmosphere is generated by the sea. Wherever you go, no matter what the weather, always bring your own sunshine. Or some other text.”</p>               
+                        </div>
+                    </div>
+                </div>
+                <div class="com2 m-auto">
+                    <div id="com21">
+                        <div class="com2-img"></div>
+                        <div class="com-text">
+                            <h2>Cooper D.</h2>
+                            <p>“I always love a wide selection of something, and the CL has satisfied my needs in this case. Many variations of strengths and designs impressed me and made me push the matter through. And I did not regret my choice when the company sent me an offer for cooperation.”</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="othercom m-0">
+                    <div class="hidden" id="com22">
+                        <div class="com1-img"></div>
+                        <div class="com-text">
+                            <h2>Deborah H.</h2>
+                            <p>“With every drop of water you drink, every breath you take, you're connected to the sea. No matter where on Earth you live. Most of the oxygen in the atmosphere is generated by the sea. Wherever you go, no matter what the weather, always bring your own sunshine. Or some other text.”</p>               
+                        </div>
+                    </div>
+                </div>
+                <div class="othercom m-0">
+                    <div class="hidden" id="com23">
+                        <div class="com1-img"></div>
+                        <div class="com-text">
+                            <h2>Deborah H.</h2>
+                            <p>“It is important to show your skills in a cover letter; I think you have already heard it before”. Only in this case, you will have an opportunity to prove your abilities in the interview. I decided to take the help of qualified professionals. My skills were demonstrated in the right way.”</p>               
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav m-auto">
+                <div class="bar m-auto">
+                    <div class="try d-inline-block">
+                        <div class="dot1" id="d1"></div>
+                    </div>
+                    <div class="try d-inline-block">
+                        <div class="dot2" id="d2"></div>
+                    </div>
+                    <div class="try d-inline-block">
+                        <div class="dot3" id="d3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <footer class="m-auto">
+                <div class="footer-logo"></div>
+                <div class="else">Private Policy <span class="mr-5 ml-5">|</span> Term of Use</div>
+                <div class="cc">© 2019, My Letter. All rights reserved.</div>
+            </footer>
+        </div>
+        <script src="js/js-timer.js"></script>
+        <script src="js/js-main.js"></script>
+        <script src="js/js-appear.js"></script>
+        <script src="js/js-timecom.js"></script>
+    </body>
+</html>

@@ -1,0 +1,371 @@
+body {
+    background-color: rgb(236, 232, 232);
+    background-image: url(images/bg.png);
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: #fff;
+}
+
+.title {
+    width: 1134px;
+    height: 150px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.tagline {
+    color: grey;
+}
+
+.navi-bar {
+    width: 1170px;
+}
+
+ul {
+    justify-content: center ;
+    width: 100%;
+    justify-content: space-between;
+}
+
+a{
+    color: black !important;
+}
+
+a:hover{
+    color: #4CAF50 !important;
+}
+
+.active a{
+    color: #4CAF50 !important;
+}
+
+.block1 {
+    width: 552px;
+    height: 419px;
+}
+
+.text-main {
+    width: 552px;
+    height: 357px;
+    background-color: #fff;
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 54px;
+}
+
+.nowrap {
+    white-space: nowrap
+}
+
+.article1 {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid rgb(236, 232, 232);
+    margin-bottom: 33px;
+}
+
+.img1 {
+    height: 335px;
+    background-image:url(images/img1.1.png);
+}
+
+.date {
+    line-height: 30px;
+}
+
+.text {
+    font-size: 15px;
+}
+
+.panel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.more {
+    display: inline-block;
+}
+
+.button-more {
+    background-color: #fff;
+    border: 1px solid #4CAF50;
+    color: #4CAF50;
+    font-weight: 600;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button-more:hover {
+    background-color: lightgrey;
+}
+
+.social {
+    display: flex;
+}
+
+.logo {
+    margin-top: 12px;
+    margin-left: 10px;
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+.vk {
+    background-image:url(images/vk.png);
+    background-size: cover;
+}
+
+.vk:hover {
+    background-image:url(images/vk-active.png);
+    background-size: cover;
+    cursor: pointer;
+}
+
+.odnoklasniki {
+    background-image:url(images/odnoklasniki.png);
+    background-size: cover;
+}
+
+.odnoklasniki:hover {
+    background-image:url(images/odnoklasniki-active.png);
+    background-size: cover;
+    cursor: pointer;
+}
+
+.twitter {
+    background-image:url(images/twitter.png);
+    background-size: cover;
+}
+
+.twitter:hover {
+    background-image:url(images/twitter-active.png);
+    background-size: cover;
+    cursor: pointer;
+}
+
+.facebook {
+    background-image:url(images/facebook.png);
+    background-size: cover;
+}
+
+.facebook:hover {
+    background-image:url(images/facebook-active.png);
+    background-size: cover;
+    cursor: pointer;
+}
+
+.inst {
+    background-image:url(images/inst.png);
+    background-size: cover;
+}
+
+.inst:hover {
+    background-image:url(images/inst-active.png);
+    background-size: cover;
+    cursor: pointer;
+}
+
+.article2 {
+    background-color: #fff;
+    border: 1px solid rgb(236, 232, 232);
+}
+
+.img2 {
+    height: 335px;
+    background-image:url(images/img1.2.png);
+}
+
+.button-early {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    font-weight: 600;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 160.85px;
+    margin-left: 24px;
+}
+
+.button-early:hover {
+    background-color: rgb(144, 187, 145);
+}
+
+.aside {
+    background-color: #fff;
+    border: 1px solid rgb(236, 232, 232);
+    padding-left: 21px;
+    height: 348px;  
+}
+
+.img-aside1 {
+    width: 232px;
+    height: 154px;
+    background-image:url(images/img2.1.png);
+}
+
+.img-aside2 {
+    width: 232px;
+    height: 154px;
+    background-image:url(images/img2.2.png);
+}
+
+.img-aside3 {
+    width: 232px;
+    height: 154px;
+    background-image:url(images/img2.3.png);
+}
+
+.text-aside {
+    width: 220px;
+    font-size: 14px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+.button-more-aside {
+    background-color: #fff;
+    border: none;
+    color: #4CAF50;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.button-more-aside::before {
+    background-color: green;
+    display: inline-block;
+    content: "»";
+    color: black;
+    position: relative;
+    top: -1.5px;
+    height: 22px;
+    width: 22px;
+    border-radius: 100%;
+}
+
+.pagination .active a {
+    background-color: #4CAF50 !important;
+    color: #fff !important;
+    border: none !important;
+}
+
+.state {
+    height: 600px;
+    display: flex;
+}
+
+.state-text {
+    background-color: white;
+    border: none;
+    color: black;
+    font-weight: 600;
+    padding: 15px 32px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 220px;
+    height: 56px;  
+    position: relative;
+    top: 420px;
+}
+
+.button-state-more {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    font-weight: 600;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 160.85px;
+    height: 56px;
+    position: relative;
+    top: 420px;
+}
+
+.button-state-more:hover {
+    background-color: rgb(144, 187, 145);
+}
+
+.ad1 {
+    background-color: #fff;
+}
+
+.img-ad {
+    height: 152px;
+    background-image:url(images/facebook-ad.png);
+    background-repeat: no-repeat;
+}
+
+.ad2 {
+    background-color: #fff;
+    height: 300px;
+    text-align: center;
+}
+
+.break {
+    width: 100%;
+    height: 20px;
+    background-color: #fff;
+}
+
+footer {
+    background-color: rgb(56, 55, 55);
+}
+
+.content {
+    color: #fff;
+    font-size: 14px;
+    border-bottom: 1px solid grey;
+}
+
+h6 {
+    font-size: 36px;
+}
+
+.footer-nav {
+    margin-top: 40px;
+}
+
+.footer-nav li {
+    list-style-type: none;
+    margin: 8px;
+}
+
+.footer-social {
+    display: flex;
+    margin-top: 30px;
+    justify-content: right;
+}
+
+.cc {
+    color: grey;
+    font-size: 14px;
+    margin-bottom: 0px !important;
+}
+
+.bg2 {
+    position: absolute;
+    width: 100%;
+    height: 1300px;
+    top: 2100px;
+    z-index: -1;
+    background-image: url(images/bg3.png);
+    background-repeat: no-repeat;
+}
